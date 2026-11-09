@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FewTabs Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="../../icons/icon48.png" alt="" width="40" height="40" />
+        <div>
+          <h1>FewTabs</h1>
+          <p class="subtitle">
+            Currently <strong id="current-count">–</strong> open tabs across all windows.
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>Badge colors</h2>
+        <p class="hint">
+          Each level applies to tab counts up to and including its number. Levels are sorted
+          automatically when you save.
+        </p>
+
+        <ol id="rules" class="rules"></ol>
+
+        <button type="button" id="add-rule" class="secondary">+ Add level</button>
+
+        <div class="rule overflow">
+          <span class="label">More than <strong id="overflow-label">–</strong> tabs</span>
+          <input type="color" id="overflow-color" aria-label="Color above the last level" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Preview</h2>
+        <div id="preview" class="preview"></div>
+      </section>
+
+      <footer>
+        <button type="button" id="save">Save</button>
+        <button type="button" id="reset" class="secondary">Reset to defaults</button>
+        <span id="status" role="status" aria-live="polite"></span>
+      </footer>
+    </main>
+
+    <template id="rule-template">
+      <li class="rule">
+        <span class="label">Up to</span>
+        <input type="number" class="rule-max" min="0" step="1" required aria-label="Maximum tabs" />
+        <span class="label">tabs</span>
+        <input type="color" class="rule-color" aria-label="Badge color" />
+        <button type="button" class="remove icon" aria-label="Remove level" title="Remove level">
+          ×
+        </button>
+      </li>
+    </template>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

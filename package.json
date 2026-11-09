@@ -1,0 +1,12 @@
+{
+  "name": "fewtabs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension that shows a color-coded count of open tabs across all windows.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "icons": "sh scripts/generate-icons.sh",
+    "package": "mkdir -p dist && rm -f dist/fewtabs.zip && zip -r dist/fewtabs.zip manifest.json src icons -x 'icons/*.svg'"
+  }
+}
