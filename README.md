@@ -16,6 +16,10 @@ stored in `chrome.storage.sync`, so they follow your Chrome profile.
 
 Hovering the icon shows a tooltip like `FewTabs: 42 tabs in 3 windows`.
 
+## Install
+
+Install FewTabs from the [Chrome Web Store](https://chromewebstore.google.com/detail/fewtabs/fpgofdgipdgcniieheaddiofpemacomj).
+
 ## Install (development)
 
 1. Open `chrome://extensions`.
