@@ -47,3 +47,7 @@ npm test          # run unit tests (Node 18+)
 npm run icons     # regenerate icons/*.png from icons/icon.svg
 npm run package   # build dist/fewtabs.zip for the Chrome Web Store
 ```
+
+## License
+
+Licensed under the [Apache License 2.0](LICENSE).

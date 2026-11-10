@@ -2,6 +2,7 @@
   "name": "fewtabs",
   "version": "1.0.0",
   "private": true,
+  "license": "Apache-2.0",
   "description": "Chrome extension that shows a color-coded count of open tabs across all windows.",
   "type": "module",
   "scripts": {
